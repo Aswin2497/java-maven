@@ -21,7 +21,7 @@ test:
         - mvn test
         
 
-deploy:
+.deploy:
   stage: deploy
   script:
     - mvn deploy
