@@ -20,6 +20,12 @@ test:
     script:
         - mvn test
         
+Scan:
+  stage: scan
+  script:
+    - mvn clean verify sonar:sonar
+  only:
+    - master
 
 .deploy:
   stage: deploy
