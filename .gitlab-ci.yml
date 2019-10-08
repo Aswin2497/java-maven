@@ -1,0 +1,29 @@
+image: maven:latest
+
+variables:
+  MAVEN_CLI_OPTS: "--batch-mode --errors --fail-at-end --show-version"
+  MAVEN_OPTS: "-Dmaven.repo.local=.m2/repository"
+
+cache:
+  paths:
+    - .m2/repository/
+    
+
+
+build:
+  stage: build
+  script:
+    - mvn package
+    
+test:
+    stage: test
+    script:
+        - mvn test
+        
+
+deploy:
+  stage: deploy
+  script:
+    - mvn deploy
+  only:
+    - master
