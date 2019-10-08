@@ -20,8 +20,8 @@ test:
     script:
         - mvn test
         
-Scan:
-  stage: scan
+scan:
+  stage: test
   script:
     - mvn clean verify sonar:sonar
   only:
