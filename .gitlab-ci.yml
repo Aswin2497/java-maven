@@ -35,6 +35,9 @@ test:
 
 deploy:
   stage: deploy
+  tags:
+    - deploy
+
   script:
     - mvn deploy
   only:
