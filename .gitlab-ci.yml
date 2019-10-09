@@ -12,16 +12,22 @@ cache:
 
 build:
   stage: build
+  tags:
+    - build
   script:
     - mvn package
     
 test:
     stage: test
+    tags:
+    - test
     script:
         - mvn test
         
 scan:
   stage: test
+  tags:
+    - scan
   script:
     - mvn clean verify sonar:sonar
   only:
