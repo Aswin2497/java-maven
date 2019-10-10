@@ -24,7 +24,7 @@ test:
     script:
         - mvn test
         
-.scan:
+scan:
   stage: test
   tags:
     - scan
@@ -33,7 +33,7 @@ test:
   only:
     - master
 
-deploy:
+.deploy:
   stage: deploy
   tags:
     - deploy
