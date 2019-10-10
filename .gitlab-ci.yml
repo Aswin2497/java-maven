@@ -32,6 +32,7 @@ scan:
   script:
     - mvn clean install
     - mvn sonar:sonar
+    #- mvn --batch-mode verify sonar:sonar -Dsonar.host.url=$SONAR_URL -Dsonar.login=$SONAR_LOGIN -Dsonar.password=$SONAR_PASSWORD
   only:
     - master
 
