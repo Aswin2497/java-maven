@@ -29,7 +29,7 @@ scan:
   tags:
     - scan
   script:
-    - mvn clean verify sonar:sonar
+    - mvn sonar:sonar
   only:
     - master
 
