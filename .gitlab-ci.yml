@@ -29,6 +29,7 @@ scan:
   tags:
     - scan
   script:
+    - mvn clean install
     - mvn sonar:sonar
   only:
     - master
