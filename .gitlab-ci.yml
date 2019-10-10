@@ -35,7 +35,7 @@ scan:
   only:
     - master
 
-.deploy:
+deploy:
   stage: deploy
   tags:
     - deploy
