@@ -14,7 +14,7 @@ cache:
 build:
   stage: build
   tags:
-    - build
+    - shay
   script:
     - mvn $MAVEN_CLI_OPTS compile
     
