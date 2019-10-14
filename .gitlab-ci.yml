@@ -15,6 +15,7 @@ build:
   stage: build
   tags:
     - shay
+    - tagA
   script:
     - mvn $MAVEN_CLI_OPTS compile
     
@@ -22,10 +23,11 @@ test:
     stage: test
     tags:
     - test
+    - tagB
     script:
         - mvn $MAVEN_CLI_OPTS test
         
-scan:
+.scan:
   stage: test
   tags:
     - scan
@@ -36,7 +38,7 @@ scan:
   only:
     - master
 
-deploy:
+.deploy:
   stage: deploy
   tags:
     - deploy
