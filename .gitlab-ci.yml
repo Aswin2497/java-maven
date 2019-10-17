@@ -21,6 +21,7 @@ build:
     - shay
     - tagA
   script:
+    - pwd
     - mvn $MAVEN_CLI_OPTS compile
     
 test:
