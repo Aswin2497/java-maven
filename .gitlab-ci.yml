@@ -9,7 +9,11 @@ cache:
     - .m2/repository/
     - target/
     
-
+stages:
+    - build
+    - test
+    - scan
+    - publish
 
 build:
   stage: build
@@ -38,10 +42,10 @@ scan:
   only:
     - master
 
-deploy:
-  stage: deploy
+publish:
+  stage: publish
   tags:
-    - deploy
+    - publish
 
   script:
     - mvn $MAVEN_CLI_OPTS deploy
