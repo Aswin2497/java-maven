@@ -34,7 +34,7 @@
     <repository>
         <id>central</id>
         <name>ip-172-31-32-100.ap-south-1.compute.internal-releases</name>
-        <url>http://15.206.73.157:8081/artifactory/libs-release-local</url>
+        <url>http://13.235.247.222:8081/artifactory/libs-release-local</url>
     </repository>
 </distributionManagement>
 
@@ -65,10 +65,10 @@
                  <artifactId>tomcat7-maven-plugin</artifactId>  
                  <version>2.2</version>  
                  <configuration>  
-                  <url>http:// localhost:8080/manager/text</url>  
+                  <url>http://13.235.247.222:8080/manager/text</url>  
                   <server>TomcatServer</server>    *(From maven > settings.xml)*
-                  <username>*yourtomcatusername*</username>  
-                  <password>*yourtomcatpassword*</password>   
+                  <username>admin</username>  
+                  <password>admin</password>   
                  </configuration>   
                 </plugin> 
 		</plugins>
