@@ -52,3 +52,13 @@ publish:
     - mvn $MAVEN_CLI_OPTS deploy
   only:
     - master
+    
+deploy:
+  stage: deploy
+  tags:
+    - deploy
+
+  script:
+    - mvn tomcat:deploy
+  only:
+    - master
