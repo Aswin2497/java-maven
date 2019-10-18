@@ -14,6 +14,7 @@ stages:
     - test
     - scan
     - publish
+    - deploy
 
 build:
   stage: build
