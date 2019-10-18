@@ -44,7 +44,7 @@ scan:
   only:
     - master
 
-publish:
+.publish:
   stage: publish
   tags:
     - publish
