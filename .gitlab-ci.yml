@@ -60,7 +60,7 @@ deploy:
     - deploy
 
   script:
-    - mvn tomcat8:deploy
-    - mvn tomcat8:run
+    - mvn tomcat:deploy
+    - mvn tomcat:run
   only:
     - master
