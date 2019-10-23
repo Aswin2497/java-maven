@@ -65,7 +65,6 @@
                  <artifactId>tomcat7-maven-plugin</artifactId>  
                  <version>2.0</version>  
                  <configuration>
-                      <ignorePackaging>true</ignorePackaging>
                       <server>maven-tomcat-war-deployment-server</server> 
                       <url>http://${env.CURR_IP}:8090/manager/text</url>  
                       <path>/sayo</path>  
