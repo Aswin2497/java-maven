@@ -23,6 +23,10 @@ build:
     - tagA
   script:
     - pwd
+    - echo $MAVEN_REPO_PASS
+    - echo $MAVEN_REPO_URL
+    - echo $MAVEN_REPO_USER
+    - echo $CURR_IP
     - mvn $MAVEN_CLI_OPTS compile
     
 test:
@@ -44,7 +48,7 @@ scan:
   only:
     - master
 
-.publish:
+publish:
   stage: publish
   tags:
     - publish
