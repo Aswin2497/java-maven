@@ -64,7 +64,7 @@ deploy:
     - deploy
 
   script:
-    - mvn clean install tomcat7:deploy
+    - mvn install tomcat7:deploy
     - mvn tomcat7:run
   only:
     - master
