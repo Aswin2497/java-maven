@@ -34,7 +34,7 @@
     <repository>
         <id>central</id>
         <name>ip-172-31-32-100.ap-south-1.compute.internal-releases</name>
-        <url>http://13.233.25.73:8081/artifactory/libs-release-local</url>
+        <url>http://$CURR_IP:8081/artifactory/libs-release-local</url>
     </repository>
 </distributionManagement>
 
@@ -65,7 +65,7 @@
                  <artifactId>tomcat8-maven-plugin</artifactId>  
                  <version>2.2</version>  
                  <configuration>  
-                  <url>http://13.233.25.73:8090/manager/text</url>  
+                  <url>http://$CURR_IP:8090/manager/text</url>  
                   <path>/sayo</path>  
                  </configuration>   
                 </plugin> 
